@@ -225,4 +225,10 @@ const char* getsignalname(int signal)
     }
     return signal_names[signal];
 }
+
+int pthread_kill(pthread_t thread, int sig)
+{
+    fprintf(stderr, "pthread_kill: thread='%i', sig='%i'\n", thread, sig);
+    VERIFY_NOT_REACHED();
+}
 }

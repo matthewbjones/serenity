@@ -58,6 +58,8 @@ int raise(int sig);
 int getsignalbyname(const char*);
 const char* getsignalname(int);
 
+int pthread_kill(pthread_t thread, int sig);
+
 extern const char* sys_siglist[NSIG];
 
 #define SIG_DFL ((__sighandler_t)0)

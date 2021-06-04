@@ -160,6 +160,12 @@ int execl(const char* filename, const char* arg0, ...)
     return execve(filename, const_cast<char* const*>(args.data()), environ);
 }
 
+int execle(const char* filename, const char* arg0, ...)
+{
+    fprintf(stderr, "execle: filename='%s', arg0='%s'\n", filename, arg0);
+    VERIFY_NOT_REACHED();
+}
+
 int execlp(const char* filename, const char* arg0, ...)
 {
     Vector<const char*, 16> args;

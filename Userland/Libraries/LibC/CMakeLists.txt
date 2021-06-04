@@ -51,6 +51,7 @@ set(LIBC_SOURCES
     termios.cpp
     time.cpp
     times.cpp
+    ucontext.cpp
     ulimit.cpp
     unistd.cpp
     utime.cpp

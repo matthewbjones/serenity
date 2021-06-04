@@ -1,0 +1,19 @@
+*** ruby-3.0.1/tool/config.sub	2021-04-05 06:33:42.000000000 -0600
+--- ruby-3.0.1-port/tool/config.sub	2021-06-01 17:28:27.000000000 -0600
+*************** case $os in
+*** 1695,1701 ****
+  	# Now accept the basic system types.
+  	# The portable systems comes first.
+  	# Each alternative MUST end in a * to match a version number.
+! 	gnu* | android* | bsd* | mach* | minix* | genix* | ultrix* | irix* \
+  	     | *vms* | esix* | aix* | cnk* | sunos | sunos[34]* \
+  	     | hpux* | unos* | osf* | luna* | dgux* | auroraux* | solaris* \
+  	     | sym* |  plan9* | psp* | sim* | xray* | os68k* | v88r* \
+--- 1695,1701 ----
+  	# Now accept the basic system types.
+  	# The portable systems comes first.
+  	# Each alternative MUST end in a * to match a version number.
+! 	gnu* | android* | bsd* | mach* | minix* | genix* | ultrix* | serenity* | irix* \
+  	     | *vms* | esix* | aix* | cnk* | sunos | sunos[34]* \
+  	     | hpux* | unos* | osf* | luna* | dgux* | auroraux* | solaris* \
+  	     | sym* |  plan9* | psp* | sim* | xray* | os68k* | v88r* \

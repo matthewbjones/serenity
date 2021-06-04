@@ -60,3 +60,9 @@ void* dlsym(void* handle, const char* symbol_name)
     }
     return result.value();
 }
+
+int dladdr(const void* address, Dl_info* info)
+{
+    fprintf(stderr, "dladdr: address='%p', dl_info->dli_fname='%s'\n", address, info->dli_fname);
+    VERIFY_NOT_REACHED();
+}
